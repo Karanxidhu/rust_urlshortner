@@ -1,0 +1,8 @@
+CREATE TABLE url(
+  id SERIAL PRIMARY KEY,
+  shorten_url VARCHAR NOT NULL,
+  original_url VARCHAR NOT NULL,
+  click_count INT NOT NULL DEFAULT 0,
+  created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
